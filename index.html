@@ -1,125 +1,474 @@
 ---
 layout: default
-title: Projects
+title: Portfólio
 ---
 
-<!DOCTYPE html>
-<html lang="en">
+<section id="projetos" class="page-section is-active">
+  <div class="projects-page">
+    <div class="projects-grid" id="projectsGrid"></div>
+  </div>
+</section>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+<section id="sobre" class="page-section">
+  <section class="about-page">
+    <div class="about-content">
+      <h2>Sobre Mim</h2>
 
-<body>
-    <header>
-        <h1>My Projects</h1>
-        <p>Showcasing my work in Business Intelligence and Data Visualization</p>
-    </header>
+      <div class="about-text">
+      <h3>Minha Trajetória</h3>
+      <p>
+        Sou graduada em <strong>Comunicação Social</strong> e pós-graduada em <strong>Ciência de Dados e Analytics</strong>,
+        ambas pela PUC-Rio. <br>
+        Meu diferencial está em integrar meu repertório de comunicação com Data Analytics para
+        <strong>traduzir dados em narrativas claras e acionáveis</strong>, viabilizando a tomada de decisão estratégica.
+      </p>
 
-    <section id="projects">
-        <div class="project" onclick="openModal('powerbi')">
-            <h2>Power BI</h2>
-            <p>Interactive dashboards to visualize data effectively.</p>
-        </div>
-        <div class="project" onclick="openModal('tableau')">
-            <h2>Tableau</h2>
-            <p>Powerful analytics and business intelligence tools.</p>
-        </div>
-        <div class="project" onclick="openModal('databricks')">
-            <h2>Databricks</h2>
-            <p>Collaboration and innovation in data science.</p>
-        </div>
-        <div class="project" onclick="openModal('shiny')">
-            <h2>Shiny</h2>
-            <p>Dynamic web applications for R.</p>
-        </div>
-    </section>
+      <h3>Minha Jornada</h3>
+      <p>
+        Sempre fui uma profissional autodidata, organizada e orientada a resultados.
+        Meu interesse pela área de dados surgiu da minha afinidade com tecnologia, raciocínio lógico e curiosidade em
+        descobrir padrões por trás dos números.
+      </p>
+      <p>
+        A combinação entre minha formação em Comunicação e minha especialização em Dados me permite criar visualizações
+        que não apenas apresentam informações, mas que contam histórias e inspiram ações baseadas em insights.
+      </p>
 
-    <div id="projectModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <div id="modalDetails"></div>
+      <h3>Ferramentas e linguagens</h3>
+      <div class="skills-icons">
+        <span class="skill-icon" data-label="Python">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        </span>
+
+        <span class="skill-icon" data-label="MySQL">
+          <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL">
+        </span>
+
+        <span class="skill-icon" data-label="PostgreSQL">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+        </span>
+
+
+        <span class="skill-icon" data-label="RStudio">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rstudio/rstudio-original.svg" alt="RStudio">
+        </span>
+
+        <span class="skill-icon" data-label="Pandas">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+        </span>
+
+        <span class="skill-icon" data-label="Jupyter">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter Notebook">
+        </span>
+
+
+        <span class="skill-icon" data-label="GitHub">
+          <img src="https://skillicons.dev/icons?i=github" alt="GitHub">
+        </span>
+
+        <span class="skill-icon" data-label="Databricks">
+          <img src="https://az-icons.com/export/icons/d180faa9ddc77cb9e841ff02998e5e21.svg" alt="Databricks">
+        </span>
+
+        <span class="skill-icon" data-label="Power BI">
+          <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/power-bi-icon.png" alt="Power BI">
+        </span>
+
+        <span class="skill-icon" data-label="Tableau">
+          <img src="https://img.icons8.com/?size=100&id=9Kvi1p1F0tUo&format=png&color=000000" alt="Tableau">
+        </span>
+
+        <span class="skill-icon" data-label="Excel">
+          <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/microsoft-excel-icon.png" alt="Microsoft Excel">
+        </span>
+
+        <span class="skill-icon" data-label="VS Code">
+          <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/visual-studio-code-icon.png" alt="Visual Studio Code">
+        </span>
+
+        <span class="skill-icon" data-label="ChatGPT">
+          <img src="https://cdn.iconscout.com/icon/free/png-256/free-chatgpt-icon-svg-download-png-7576880.png?f=webp" alt="ChatGPT">
+        </span>
+
+        <span class="skill-icon" data-label="Microsoft Copilot">
+          <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/microsoft-copilot.webp" alt="Microsoft Copilot">
+        </span>
+
+        <span class="skill-icon" data-label="Google Analytics">
+          <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-analytics-icon.png" alt="Google Analytics 4">
+        </span>
+
+        <span class="skill-icon" data-label="BigQuery">
+          <img src="https://images.icon-icons.com/2699/PNG/512/google_bigquery_logo_icon_168150.png" alt="Google BigQuery">
+        </span>
+      </div>
+
+      <h3>O Que Eu Faço</h3>
+      <ul class="skills-list">
+        <li><strong>Business Intelligence:</strong> Desenvolvimento de dashboards estratégicos em Power BI, Tableau e Databricks</li>
+        <li><strong>Data Analytics:</strong> Análise exploratória, modelagem de dados e geração de insights</li>
+        <li><strong>Storytelling com Dados:</strong> Transformação de dados complexos em narrativas compreensíveis</li>
+        <li><strong>Visualização de Dados:</strong> Criação de dashboards interativos e relatórios executivos</li>
+      </ul>
+
+      <div class="cta-section">
+        <h3>Currículo</h3>
+        <a href="{{ '/assets/docs/LauraGonzaga_CV' | relative_url }}" class="btn btn-primary" target="_blank" rel="noopener">
+          Baixar Currículo
+          </a>
         </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+const projetos = [
+  {
+    id: 1,
+    titulo: "Performance Comercial & Marketing Insights",
+    subtitulo: "Power BI",
+    imagem: "{{ '/assets/images/projetos/pbi-marketing.png' | relative_url }}",
+    descricao: "Dashboard desenvolvido para o curso <strong>Power BI para Marketing Digital</strong>, analisando performance comercial e insights de marketing. O projeto foi trabalhado desde a modelagem dos dados e criação de medidas em DAX até a visualização final no dashboard.",
+    insights: [
+      "Receita e pedidos ao longo do tempo (incluindo sazonalidade e padrões por dia da semana)",
+      "Eficiência de marketing: CPC, CPL, CAC e ROAS",
+      "Ticket médio e taxa de conversão",
+	"Atingimento de metas",
+	"Voz do cliente: avaliação média por produto, fornecedor e canal de aquisição",
+	"Insights de clientes para orientar decisões de marketing e comercial"
+    ],
+    links: [
+    { label: "Dashboard", url: "https://app.powerbi.com/view?r=eyJrIjoiOGU4MmU4MjgtNzljMi00MDIxLWFlMmMtNDliMDRhNDhlZDZlIiwidCI6IjRhNjQ3MmE0LTJmZTMtNDcxMS04ZWM5LWQ0NWQwZTE2N2UzMSJ9&pageName=dd0862b24a9b4a3622a8",
+      primary: true }
+    ],
+    tecnologias: ["Power BI"]
+  },
+  {
+    id: 2,
+    titulo: "Análise Cyclistic",
+    subtitulo: "SQL, Tableau",
+    imagem: "{{ '/assets/images/projetos/cyclistic-tableau.png' | relative_url }}",
+    descricao: "Dashboard desenvolvido para o Certificado Google Data Analytics, analisando padrões de uso de uma empresa fictícia de aluguel de bicicletas.",
+    insights: [
+      "Diferenças comportamentais entre usuários casuais e membros",
+      "Tendências sazonais de utilização",
+      "Identificação de horários e locais de pico"
+    ],
+    links: [
+    { label: "Dashboard", url: "https://public.tableau.com/app/profile/laura.gonzaga/viz/CyclisticBike-ShareCaseStudy_17267860907680/Dashboard1",
+      primary: true },
+    { label: "Case Completo (em inglês)", url: "https://github.com/lauragonzaga/Cyclistic-Capstone-Project", primary: false }
+    ],
+    tecnologias: ["Tableau", "SQL"]
+  },
+{
+  id: 3,
+  titulo: "Mapbiomas",
+  subtitulo: "Databricks, Python, PySpark, SQL",
+  imagem: "{{ '/assets/images/projetos/databricks-mapbiomas.png' | relative_url }}",
+  descricao: "Trabalho desenvolvido para a sprint de <strong>Engenharia de Dados</strong> do curso de pós-graduação em <strong>Ciência de Dados & Analytics</strong> da PUC-Rio.",
+  bulletsTitle: "Etapas do projeto",
+  bullets: [
+    "Ingestão e padronização dos dados brutos",
+    "Transformações e limpeza com SQL, Python e PySpark",
+    "Modelagem em arquitetura medalhão (Bronze - Silver - Gold)",
+    "Construção de modelo estrela e queries analíticas",
+    "Integração com dados do IBGE para cálculo de proporções de área desmatada por estado",
+    "Criação de dashboard interativo com métricas por estado, bioma e tipo de vegetação"
+  ],
+  insights: [
+      "KPIs principais de área desmatada total e nativa",
+      "Evolução temporal do desmatamento total e por bioma",
+      "Ranking de estados com maior desmatamento absoluto e relativo",
+      "Comparativo entre supressão de vegetação primária e secundária"
+    ],
+    links: [
+    { label: "Dashboard", url: "https://dbc-b08da042-4e74.cloud.databricks.com/dashboardsv3/01f0d08344e91b4791a28f4d268be1dd/published?o=1041144495999733", primary: true },
+    { label: "Repositório do Projeto", url: "https://github.com/lauragonzaga/MVP-Engenharia-de-Dados", primary: false }
+    ],
+    tecnologias: ["Databricks", "Python", "SQL", "Pyspark"]
+  },
+  {
+    id: 4,
+    titulo: "Dashboards Data Zoom",
+    subtitulo: "R Shiny",
+    imagens: [
+    "{{ '/assets/images/projetos/datazoom-1.png' | relative_url }}",
+    "{{ '/assets/images/projetos/datazoom-2.png' | relative_url }}",
+    "{{ '/assets/images/projetos/datazoom-3.png' | relative_url }}"
+  ],
+    descricao: "Conjunto de dashboards interativos desenvolvidos em Shiny para o projeto <strong>Data Zoom</strong>, utilizando dados públicos para análise e visualização. Atuação no desenvolvimento ponta a ponta, manutenção e troubleshooting, com foco em UI/UX e estabilidade.",
+    bulletsTitle: "Dashboards",   // <-- configurável
+  bullets: [
+    "RAIS – séries temporais",
+    "COMEX – séries temporais de exportações por país",
+    "COMEX - ranking de exportações por produto em relação às exportações mundiais"
+  ],
+    links: [
+    { label: "RAIS", url: "https://datazoom.shinyapps.io/app_ts_rais/", primary: true },
+    { label: "COMEX ST", url: "https://datazoom.shinyapps.io/app_ts_comex_exp_tot_pais/", primary: false },
+    { label: "COMEX Ranking", url: "https://datazoom.shinyapps.io/app_ranking_comex_exp_produto/", primary: false }
+    ],
+    tecnologias: ["R", "Shiny"]
+  },
+{
+    id: 5,
+    titulo: "Análise Desigualdade de Gênero no Cinema",
+    subtitulo: "Python",
+    imagem: "{{ '/assets/images/projetos/python-cinema.png' | relative_url }}",
+    descricao: "Trabalho desenvolvido para a sprint de <strong>Análise de Dados e Boas Práticas</strong> do curso de pós-graduação em <strong>Ciência de Dados & Analytics</strong> da PUC-Rio. Análise das desigualdades de gênero na indústria cinematográfica, focando na participação feminina em direção, roteiro e protagonismo. O projeto usa dados do IMDb e do Kaggle para explorar padrões de representatividade e seu impacto em bilheteria e avaliações.",
+    bulletsTitle: "O que foi feito",
+    bullets: [
+      "Aplicação de boas práticas de clean code",
+      "Separação clara entre as etapas de pré-processamento, análise e visualização",
+      "Criação de gráficos eficazes com Seaborn e Matplotlib",
+      "Uso consciente de storytelling com Markdown para comunicar achados de forma coesa",
+      "Organização e documentação de repositório GitHub com foco em clareza, contexto e reprodutibilidade"
+    ],
+    insights: [
+      "Análises exploratórias da participação feminina em diferentes funções ao longo do tempo",
+      "Comparações de bilheteria e avaliação do IMDb entre filmes dirigidos por homens e mulheres",
+      "Visualizações para comunicar padrões e levantar hipóteses sobre desigualdade estrutural no setor"
+    ],
+    links: [
+    { label: "Case Completo", url: "https://github.com/lauragonzaga/MVP-Representatividade-Feminina-no-Cinema", primary: true }
+    ],
+    tecnologias: ["Python"]
+  },
+{
+    id: 6,
+    titulo: "Previsão de Hits com Machine Learning",
+    subtitulo: "Python",
+    imagem: "{{ '/assets/images/projetos/machine-learning.png' | relative_url }}",
+    descricao: "Trabalho realizado para a sprint de <strong>Machine Learning & Analytics</strong> do curso de pós-graduação em <strong>Ciência de Dados & Analytics</strong> da PUC-Rio.<br> Este projeto tem como objetivo estimar a probabilidade de uma música se tornar um hit no Spotify. A proposta é apoiar decisões em áreas como marketing e curadoria de playlists, ajudando a priorizar faixas para promoção.",
+    bulletsTitle: "O que foi feito",
+    bullets: [
+      "Limpeza e preparação dos dados",
+      "Engenharia de atributos",
+      "EDA (análise exploratória) para identificar padrões de popularidade e diferenças entre hits e não-hits",
+      "Construção de pipelines de pré-processamento e modelagem, garantindo reprodutibilidade e evitando vazamento de dados",
+      "Modelagem supervisionada com três algoritmos: Logistic Regression, Random Forest e XGBoost",
+      "Validação cruzada estratificada e comparação com baseline",
+      "Métricas de avaliação com foco em PR-AUC e recall, dado desbalanceamento das classes",
+      "GridSearchCV para ajuste de hiperparâmetros do XGBoost",
+      "Conclusões e próximos passos discutindo aplicações e limitações"
+    ],
+    links: [
+    { label: "Case Completo", url: "https://github.com/lauragonzaga/MVP-Spotify-Hits-ML", primary: true }
+    ],
+    tecnologias: ["Python"]
+  }
+];
+
+
+/* FUNÇÕES */
+
+
+function renderProjects() {
+  const grid = document.getElementById('projectsGrid');
+  if (!grid) return;
+
+  grid.innerHTML = projetos.map(projeto => {
+    const img = (projeto.imagens && projeto.imagens.length) ? projeto.imagens[0] : projeto.imagem;
+
+    return `
+      <div class="project-card" onclick="openModal(${projeto.id})">
+        <div class="project-image">
+          <img src="${img}" alt="${projeto.titulo}">
+        </div>
+        <div class="project-info">
+            <h3><strong>${projeto.titulo}</strong></h3>
+          <p class="project-tech">${projeto.subtitulo}</p>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderImageGallery(imagens, titulo) {
+  const imgs = Array.isArray(imagens) ? imagens.filter(Boolean) : [];
+  if (imgs.length === 0) return "";
+
+  if (imgs.length === 1) {
+    return `
+      <div class="modal-image">
+        <img src="${imgs[0]}" alt="${titulo}">
+      </div>
+    `;
+  }
+
+  const slides = imgs.map((src, i) => `
+    <button class="gallery-thumb ${i === 0 ? "is-active" : ""}" type="button" data-src="${src}">
+      <img src="${src}" alt="${titulo} - imagem ${i + 1}">
+    </button>
+  `).join("");
+
+  return `
+    <div class="modal-gallery">
+      <div class="gallery-main">
+        <img id="galleryMainImg" src="${imgs[0]}" alt="${titulo}">
+      </div>
+      <div class="gallery-thumbs" id="galleryThumbs">
+        ${slides}
+      </div>
+    </div>
+  `;
+}
+
+function attachGalleryHandlers() {
+  const thumbs = document.getElementById("galleryThumbs");
+  const mainImg = document.getElementById("galleryMainImg");
+  if (!thumbs || !mainImg) return;
+
+  thumbs.addEventListener("click", (e) => {
+    const btn = e.target.closest(".gallery-thumb");
+    if (!btn) return;
+    const src = btn.getAttribute("data-src");
+    if (!src) return;
+
+    mainImg.src = src;
+    thumbs.querySelectorAll(".gallery-thumb").forEach(b => b.classList.remove("is-active"));
+    btn.classList.add("is-active");
+  });
+}
+
+function renderBulletsSection(title, bullets) {
+  const items = Array.isArray(bullets) ? bullets.filter(Boolean) : [];
+  if (items.length === 0) return "";
+
+  const sectionTitle = title && title.trim().length ? title : "Insights";
+  return `
+    <h3>${sectionTitle}</h3>
+    <ul>
+      ${items.map(t => `<li>${t}</li>`).join("")}
+    </ul>
+  `;
+}
+
+function renderActionButtons(links) {
+  const safeLinks = Array.isArray(links) ? links.filter(l => l && l.url && l.label) : [];
+  if (safeLinks.length === 0) return "";
+
+  const hasPrimary = safeLinks.some(l => l.primary === true);
+
+  return `
+    <div class="modal-actions">
+      ${safeLinks.map((l, idx) => {
+        const isPrimary = l.primary === true || (!hasPrimary && idx === 0);
+        const cls = isPrimary ? "btn btn-primary" : "btn btn-secondary";
+        return `<a href="${l.url}" target="_blank" rel="noopener" class="${cls}">${l.label}</a>`;
+      }).join("")}
+    </div>
+  `;
+}
+
+function openModal(id) {
+  const projeto = projetos.find(p => p.id === id);
+  if (!projeto) return;
+
+  const modalBody = document.getElementById('modalBody');
+  const modal = document.getElementById('projectModal');
+  if (!modalBody || !modal) return;
+
+  const imagens = (projeto.imagens && projeto.imagens.length)
+    ? projeto.imagens
+    : (projeto.imagem ? [projeto.imagem] : []);
+
+  modalBody.innerHTML = `
+    <div class="modal-header">
+      <h2>${projeto.titulo}</h2>
+      <p class="modal-subtitle">${projeto.subtitulo}</p>
     </div>
 
-    <script>
-        function openModal(project) {
-            const projectDetails = {
-                powerbi: 'Details about Power BI project.',
-                tableau: 'Details about Tableau project.',
-                databricks: 'Details about Databricks project.',
-                shiny: 'Details about Shiny project.'
-            };
-            document.getElementById('modalDetails').textContent = projectDetails[project];
-            document.getElementById('projectModal').style.display = 'block';
-        }
+    ${renderImageGallery(imagens, projeto.titulo)}
 
-        function closeModal() {
-            document.getElementById('projectModal').style.display = 'none';
-        }
-    </script>
+    <div class="modal-content-text">
+      <h3>Sobre o Projeto</h3>
+      <p>${projeto.descricao}</p>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
+    ${projeto.bullets ? renderBulletsSection(projeto.bulletsTitle, projeto.bullets) : ''}
+    ${projeto.insights ? renderBulletsSection('Insights', projeto.insights) : ''}
 
-        header {
-            text-align: center;
-            margin: 20px;
-        }
+      <h3>Tecnologias Utilizadas</h3>
+      <div class="tech-tags">
+        ${projeto.tecnologias.map(t => `<span class="tag">${t}</span>`).join('')}
+      </div>
 
-        #projects {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            padding: 20px;
-        }
+        ${renderActionButtons(projeto.links)}
+    </div>
+  `;
 
-        .project {
-            border: 1px solid #ccc;
-            padding: 20px;
-            cursor: pointer;
-        }
+  document.getElementById('projectModal').style.display = 'block';
 
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgb(0, 0, 0);
-            background-color: rgba(0, 0, 0, 0.4);
-        }
+  // se houver galeria, liga o click nas thumbs
+  attachGalleryHandlers();
+}
 
-        .modal-content {
-            background-color: #fefefe;
-            margin: 15% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-        }
+document.addEventListener('DOMContentLoaded', function () {
+  renderProjects();
 
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
+  const modal = document.getElementById('projectModal');
+  const closeBtn = document.querySelector('.close');
 
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
-</body>
+  if (closeBtn && modal) {
+    closeBtn.onclick = () => modal.style.display = 'none';
+  }
 
-</html>
+  window.onclick = function(event) {
+    if (modal && event.target === modal) {
+      modal.style.display = 'none';
+    }
+  };
+});
+</script>
+
+<script>
+(function () {
+  function showSection(sectionId) {
+    const projetos = document.getElementById('projetos');
+    const sobre = document.getElementById('sobre');
+    const btnProjetos = document.getElementById('btnProjetos');
+    const btnSobre = document.getElementById('btnSobre');
+
+    if (!projetos || !sobre || !btnProjetos || !btnSobre) return;
+
+    if (sectionId === 'sobre') {
+      projetos.classList.remove('is-active');
+      sobre.classList.add('is-active');
+
+      btnProjetos.classList.remove('btn-primary');
+      btnProjetos.classList.add('btn-secondary');
+      btnSobre.classList.remove('btn-secondary');
+      btnSobre.classList.add('btn-primary');
+    } else {
+      sobre.classList.remove('is-active');
+      projetos.classList.add('is-active');
+
+      btnSobre.classList.remove('btn-primary');
+      btnSobre.classList.add('btn-secondary');
+      btnProjetos.classList.remove('btn-secondary');
+      btnProjetos.classList.add('btn-primary');
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const btnProjetos = document.getElementById('btnProjetos');
+    const btnSobre = document.getElementById('btnSobre');
+
+    if (btnProjetos) btnProjetos.addEventListener('click', () => showSection('projetos'));
+    if (btnSobre) btnSobre.addEventListener('click', () => showSection('sobre'));
+
+    // começa em Projetos
+    showSection('projetos');
+  });
+})();
+</script>

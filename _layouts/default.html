@@ -1,20 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} - Laura Gonzaga</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}Laura Gonzaga</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" href="{{ '/favicon.ico.png' | relative_url }}">
 </head>
 <body>
-    {% include header.html %}
-    
-    <main class="container">
-        {{ content }}
+  <div class="site-shell">
+    <aside class="site-fixed-panel">
+      <div class="fixed-panel-inner">
+        <a href="{{ '/' | relative_url }}" class="brand-block">
+          <h1>Laura Gonzaga</h1>
+        </a>
+        
+        <a  class="brand-role">
+        <h2>Analista de Dados & BI</h2>
+        </a>
+        
+        <p class="brand-tagline">Transformando dados em narrativas.</p>
+
+<div class="fixed-social">
+          <a href="https://linkedin.com/in/lauragonzaga" target="_blank" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A2.02 2.02 0 0 0 3.2 5.02c0 1.11.9 2.01 2.02 2.01a2.01 2.01 0 1 0 .03-4.03ZM20.8 12.72c0-3.47-1.85-5.08-4.32-5.08-1.99 0-2.88 1.09-3.37 1.86V8.5H9.73c.04.66 0 11.5 0 11.5h3.38v-6.42c0-.34.03-.68.13-.92.27-.68.88-1.38 1.91-1.38 1.35 0 1.89 1.03 1.89 2.54V20H20.8v-7.28Z"/>
+            </svg>
+          </a>
+
+          <a href="https://github.com/lauragonzaga" target="_blank" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 .5A12 12 0 0 0 8.2 23.9c.6.1.82-.26.82-.58v-2.04c-3.34.73-4.04-1.42-4.04-1.42-.55-1.37-1.33-1.73-1.33-1.73-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.22 1.83 1.22 1.06 1.8 2.8 1.28 3.48.98.1-.76.42-1.28.76-1.57-2.67-.3-5.47-1.32-5.47-5.9 0-1.3.47-2.37 1.23-3.2-.12-.3-.53-1.5.12-3.13 0 0 1-.32 3.3 1.22a11.5 11.5 0 0 1 6 0c2.3-1.54 3.3-1.22 3.3-1.22.65 1.63.24 2.83.12 3.13.77.83 1.23 1.9 1.23 3.2 0 4.6-2.8 5.6-5.49 5.89.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.83.58A12 12 0 0 0 12 .5Z"/>
+            </svg>
+          </a>
+        </div>
+
+<nav class="fixed-nav" aria-label="Navegação">
+  <button type="button" class="btn btn-primary" id="btnProjetos">Projetos</button>
+  <button type="button" class="btn btn-secondary" id="btnSobre">Sobre</button>
+</nav>
+
+        
+      </div>
+    </aside>
+
+    <main class="site-main-content">
+      {{ content }}
     </main>
-    
-    {% include footer.html %}
-    
-    <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+  </div>
 </body>
 </html>

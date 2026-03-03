@@ -1,5 +1,15 @@
 title: Laura Gonzaga
 description: Portfólio de Projetos em BI e Data Analytics
-theme: jekyll-theme-minimal
 baseurl: ""
 url: "https://lauragonzaga.github.io"
+
+collections_dir: _collections
+collections:
+  projetos:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
